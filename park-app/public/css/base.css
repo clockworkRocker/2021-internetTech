@@ -1,0 +1,149 @@
+@import url("palette.css");
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(var(--color-secondary-background), #888888);
+}
+
+main {
+  padding: 0 calc(100vw / 24);
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Zen Kurendaido';
+  font-size: 3vh;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 2vh 0;
+  box-shadow: 0px 0.6vh 0.6vh gray;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ---------------- MARGINS & PADDINGS ---------------- */
+.m1 {
+  margin: 1vw;
+}
+
+.m2{
+  margin: 2vw;
+}
+
+.p1 {
+  padding: 1vw;
+}
+
+.p2 {
+  padding: 2vw;
+}
+/* ---------------- ALIGNMENTS ---------------- */
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------- BLOCKS ---------------- */
+
+.row{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.row-expandable{
+  display: flex;
+}
+
+.colorbox{
+  height: 100%;
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-text);
+};
+
+.filler {
+  box-sizing: border-box;
+  width: 12vw;
+}
+
+
+/* ---------------- BUTTONS ---------------- */
+.button-big {
+  width: calc(max(4vh, 4vw));
+  font-size: 2vh;
+  font-weight: 600;
+  height: 4vh;
+  opacity: 1;
+  cursor: pointer;
+  border: 2px;
+  border-color: var(--color-secondary-border);
+  border-radius: 8px;
+  background-color: var(--color-secondary-background);
+}
+
+.button-big:hover {
+  opacity: 1;
+  background-color: var(--color-tertiary-background);
+}
+
+.button-small {
+  width: 2vh;
+  height: 2vh;
+  opacity: 0.6;
+  cursor: pointer;
+  background-color: var(--color-secondary-background);
+  border: 1px solid;
+  border-color: var(--color-secondary-border);
+  border-radius: 4px;
+}
+
+.button-small:hover {
+  opacity: 1;
+  background-color: var(--color-tertiary-background);
+}
+
+.add-button {
+  width: 3vw;
+  height: 3vw;
+  background: url(../img/add.png) no-repeat center;
+  background-size: 75%;
+}
+
+.cancel-button {
+  width: 3vw;
+  height: 3vw;
+  background: url(../img/cancel.png) no-repeat center;
+  background-size: 75%;
+}
+
+.edit-button {
+  margin-right: 0.4vw;
+  width: 2vw;
+  height: 2vw;
+  background: url(../img/write.png) no-repeat center / contain;
+}
+
+.delete-button {
+  margin-right: 0.4vw;
+  width: max(2vw, 2vh);
+  height: max(2vw, 2vh);
+  background: url(../img/delete.png) no-repeat center / contain;
+}
+
+.dot {
+  margin-right: 0.4vw;
+  width: 2vw;
+  height: 2vw;
+  background: url(../img/dot.png) no-repeat center / contain;
+}

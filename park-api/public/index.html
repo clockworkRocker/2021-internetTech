@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Троллейбусный парк</title>
+</head>
+
+<body>
+  <header class="row colorbox">
+    <div class="filler"></div>
+    <span>Троллейбусный парк</span>
+    <div class="row userbox">
+      <span class="username">%Username%</span>
+      <button class="button-big cancel-button"></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="list-container">
+      <ul class="route-list">
+        <li>
+          <label class="route">
+            %Routename% (%Routetype%)
+            <input class="route-display" type="checkbox">
+            <ul class="stop-list row">
+              <li class="stop-container row">
+                <span class="dot"></span>
+                <div class="stop-box">
+                  <div class="stop-name">
+                    %Stopname%
+                    <input type="text" id="edit-name-01" class="edit-name">
+                  </div>
+                  <div class="row centered">
+                    <button type="button" class="button-small edit-button">
+                    </button>
+                    <button class="button-small delete-button"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="stop-container row">
+                <span class="dot"></span>
+                <div class="stop-box">
+                  <div class="stop-name">
+                    %Stopname%
+                    <input type="text" id="edit-name-02" class="edit-name">
+                  </div>
+                  <div class="row centered">
+                    <button type="button" class="button-small edit-button">
+                    </button>
+                    <button class="button-small delete-button"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="stop-container row">
+                <span class="dot"></span>
+                <button class="button-big add-button"></button>
+                <input type="text" id="add-stop" class="edit-name">
+              </li>
+            </ul>
+          </label>
+        </li>
+        <li>
+          <div class="row">
+            <button class="button-big add-button"></button>
+            <input type="text" name="add-route" id="add-route">
+            <select name="add-route-type" id="add-route-type">
+              <option class="route-type" value="1">Магистральный</option>
+              <option class="route-type" value="2">Районный</option>
+              <option class="route-type" value="3">Социальный</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+</body>
+
+</html>

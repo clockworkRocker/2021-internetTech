@@ -1,0 +1,112 @@
+@import url("base.css");
+
+.userbox {
+  margin: 0 1vw
+}
+
+.username {
+  margin: 0 1vw;
+}
+
+.route {
+  font-weight: 600;
+  font-size: 3vh;
+  position: relative;
+}
+
+input.route-display {
+  display: none;
+}
+
+input.route-display:checked~.stop-list{
+  display: flex;
+  animation: animate 200ms ease-in-out;
+  animation-direction: normal;
+  transform-origin: top center;
+}
+
+.list-container{
+  padding:4px;
+  width: 78%;
+}
+
+.route-list {
+  justify-content: flex-start;
+  font-size: clamp(1rem, 2.4vh, 2rem);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-90deg);
+  }
+
+  70% {
+    transform: rotateX(20deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.stop-list {
+  display: none;
+  border: 1px solid;
+  border-color: var(--color-secondary-border);
+  background-color: var(--color-secondary-background);
+  border-radius: 8px;
+  animation: animate 200ms ease-in-out;
+  animation-direction: reverse;
+  transform-origin: top center;
+}
+
+.stop-container {
+  align-items: center;
+  padding-left: 0.4vw;
+  padding-right: 0.1vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+}
+
+.stop-box {
+  font-weight: 400;
+  font-size: 2.5vh;
+  border: 2px solid;
+  border-color: var(--color-secondary-border);
+  border-radius: 8px;
+}
+
+.stop-name {
+  margin: 0 0.65vw;
+}
+
+.edit-name {
+  height: 60%;
+  width: 9vw;
+  display: none;
+  font-size: 2vh;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: var(--color-secondary-border);
+}
+
+input#add-route {
+  font-size: 3vh;
+  display: none;
+}
+
+select#add-route-type {
+  display: none;
+  font-size: 2vh;
+  background-color: var(--color-secondary-background);
+  border: 1px solid;
+  border-color: var(--color-secondary-border);
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px lightgray;
+}
+
+.route-type {
+  border: 1px solid;
+  border-color: var(--color-secondary-border);
+  padding: 0.8vw;
+}

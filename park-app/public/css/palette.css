@@ -1,0 +1,8 @@
+:root {
+  --color-primary-background: #3d3c3a;
+  --color-primary-text: #f3ebeb;
+  --color-secondary-background: #ececec;
+  --color-secondary-border: #d3cfcf;
+  --color-tertiary-text: var(--color-primary-background);
+  --color-tertiary-background: #f5d51f;
+}
